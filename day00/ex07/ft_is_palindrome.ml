@@ -1,9 +1,9 @@
 let ft_is_palindrome str =
-    let str_length = (String.length str - 1) in
+    let str_length = String.length str in
     if str_length > 0 then
         begin
             let sIndex = 0 in
-            let eIndex = str_length in
+            let eIndex = (str_length - 1) in
             let rec check_palindrome str sChar eChar index sIndex eIndex =
                 if (eChar == sChar && index < str_length) then                
                     begin
